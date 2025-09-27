@@ -96,10 +96,6 @@ nav ul li a:hover {
   padding: 60px 50px;
 }
 
-.content-section.reverse {
-  flex-direction: row-reverse;
-}
-
 .content-image img {
   max-width: 420px;
   width: 100%;
