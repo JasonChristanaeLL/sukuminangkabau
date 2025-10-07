@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffef5;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #a8e6cf, #dcedc1);
+  color: #2f3640;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: #145a32;
+  cursor: pointer;
+}
+
+.logo a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #2f3640;
+  font-weight: 500;
+  transition: 0.3s;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+.nav-links li a:hover {
+  background-color: #82e0aa;
+  color: #fff;
+}
+
+.content {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.content h1 {
+  font-size: 40px;
+  color: #145a32;
+  cursor: pointer;
+}
+
+.content p {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  font-size: 18px;
+  color: #555;
+  margin: 0 auto 40px auto;
+  max-width: 85%;
+  line-height: 1.8;
+}
+
+.slider {
+  width: 85%;
+  margin: 60px auto 40px auto; /* geser slider sedikit ke bawah */
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.slides {
+  display: flex;
+  gap: 20px;
+}
+
+.slides img {
+  height: 300px; /* ukuran gambar lebih kecil */
+  width: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #dcedc1;
+  color: #145a32;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+}
+
+.history-section {
+  display: flex;
+  align-items: flex-start; /* sejajarin atas */
+  justify-content: center;
+  gap: 50px;
+  margin-top: 80px; /* biar section turun ke tengah layar */
+}
+
+/* atau jika mau keseluruhan slider-container turun */
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px; /* geser ke bawah */
+}
+
+/* Gambar */
+.slider-container img {
+  height: 280px; /* lebih kecil */
+  width: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+  transition: opacity 0.5s ease;
+  margin-bottom: 10px; /* space ke tombol */
+}
+
+/* Tombol di bawah gambar */
+.slider-buttons {
+  display: flex;
+  gap: 20px; /* jarak antar tombol */
+  margin-bottom: 10px; /* jarak ke deskripsi */
+}
+
+.slider-buttons button {
+  background-color: #a8e6cf;
+  color: #145a32;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
+}
+
+.slider-buttons button:hover {
+  background-color: #82e0aa;
+  color: white;
+  transform: scale(1.2);
+}
+
+/* Deskripsi singkat gambar */
+.image-desc {
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+  margin: 5px 0 15px 0;
+  max-width: 90%;
+}
+
+.history-text {
+  max-width: 500px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 30px; /* ini atur seberapa jauh teks turun */
+}
